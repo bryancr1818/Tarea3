@@ -3,6 +3,14 @@
 Estudiantes: Bryan Carrillo Rojas
 Carné: B71671
 
+- [Tarea 3](#tarea3)
+  - [Inciso 1](#inciso_1)
+  - [Inciso 2](#inciso_2)
+  - [Inciso 3](#inciso_3)
+  - [Inciso 4](#inciso_4)
+  - [Archivos](#archivos)
+
+
 ## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal
 Para el presente trabajo fueron dados los archivos de `xy.csv` y `xyp.csv`,  para trabajaes estos documentos fue necesario traducirlos a a un tipo de datos manipulables, esto se logró apartir de la biblioteca de `Pandas` y se alamacenaron los datos en las varibales `valmargx`y `valmargy`:
 
