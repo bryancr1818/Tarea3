@@ -43,7 +43,7 @@ xyp = pd.read_csv("xyp.csv",  sep=',')
 val_margx = []
 val_margy = []
 
-# Se obtienen los la sumatorias de las probabilidades (valores marginales)
+# Se obtienen las sumatorias de las probabilidades (valores marginales)
 val_margx = [ i for i in xy.sum(axis=1, numeric_only=True)]
 val_margy= [ i for i in xy.sum(axis=0, numeric_only=True)]
 
@@ -123,7 +123,7 @@ print("La co-varianza  es :",co_varianza)
 print("EL coeficiente de correlación es :", pearson)
 
 #########################################################Inciso 4#####################################################################
-# se realiza obtiene la función de densidad conjunta (3D)
+# se obtiene la función de densidad conjunta (3D)
 # se debe de realizar un meshgrid para generar un espacio equidimencional antes de intentar graficar
 X, Y = np.meshgrid(np.linspace(4, 16, 1000),np.linspace(4, 26, 1000))
 
