@@ -100,7 +100,7 @@ Al utilizar las ecuaciones de las funciones de densidad marginales con la ecuaci
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/conjxy.gif) 
 
-Ahora para tener el modelo evaluado, se ingresa los valores de `\mu` y `\sigma`:
+Ahora para tener el modelo evaluado, se ingresa los valores de <img src="https://render.githubusercontent.com/render/math?math=\mu"> y <img src="https://render.githubusercontent.com/render/math?math=\sigma">:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/conjxy_res.gif) 
 
@@ -127,11 +127,11 @@ print("EL coeficiente de correlación es :", pearson)
 Como se tiene en el materia del curso, hay ecuaciones ya definidas para cada uno de los momentos principales: Covarianza, Correlación, Coeficiente de Correlación. Cada uno tiene su propio significado que al que se le puede dar un significado físico a partir de las gráficas obtenidas.
 
 ### Correlación
-Según lo que dice el material del curso, este es el momento de segundo orden, expresado también como `R_{XY} = E[X,Y]` y  está defindo por la siguiente ecucación:
+Según lo que dice el material del curso, este es el momento de segundo orden, expresado también como <img src="https://render.githubusercontent.com/render/math?math=R_{XY} = E[X,Y]"> y  está defindo por la siguiente ecucación:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación.gif)
 
-En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite idependencia lineal entre los Variables, se realiza la prueba `E[X,Y] = E[X]E[Y]`, se la condición se cumple se comprueba la independencia estadística.
+En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite idependencia lineal entre los Variables, se realiza la prueba <img src="https://render.githubusercontent.com/render/math?math=E[X,Y] = E[X]E[Y]">, se la condición se cumple se comprueba la independencia estadística.
 
 En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
 
@@ -141,10 +141,10 @@ Al calcular `E[X]E[Y]` multiplicando `mu_x*mu_y` se obtiene:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/val_espe.gif)
 
-De los dos resultados anteriores se puede ver que la diferencia es muy pequeña, se le puede atribuir el error a los métodos de aproximación que se utilizaron. Como conclusión, se puede decir que las variables son estadísticamente independientes ya que `C_{XY} \approx E[X]E[Y]`, mismos resultado de la suposición del Inciso 2.
+De los dos resultados anteriores se puede ver que la diferencia es muy pequeña, se le puede atribuir el error a los métodos de aproximación que se utilizaron. Como conclusión, se puede decir que las variables son estadísticamente independientes ya que <img src="https://render.githubusercontent.com/render/math?math=C_{XY} \approx E[X]E[Y]">, mismos resultado de la suposición del Inciso 2.
 
 ### Covarianza
-A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como `C_{XY}` y está definido por la siguiente ecuación:
+A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como <img src="https://render.githubusercontent.com/render/math?math=C_{XY}"> y está definido por la siguiente ecuación:
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif).
 
 Es un índice muy útil para analizar la relación el que crecen o decrecen los valores de una variable con respecto a otra, existen 3 posibilidades distintas para la covarianza:
