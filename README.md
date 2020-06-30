@@ -73,3 +73,12 @@ print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y
 
 \mu_Y = 15.0794
 \sigma_X = 6.0269
+
+Ahora al graficar los ajustes se obtiene:
+## Distribución de la Densidad Marginal de X
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.png) 
+
+## Distribución de la Densidad Marginal de Y
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
+
+
