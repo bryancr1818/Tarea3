@@ -67,7 +67,7 @@ muy = paramy[0]
 sigmay = paramy[1]
 print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y el valor de sigma es: ", sigmay)
 ```
-![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecuaciones/1.gif) 
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/1.gif) 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecuaciones/2.gif) 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecuaciones/3.gif) 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecuaciones/4.gif) 
