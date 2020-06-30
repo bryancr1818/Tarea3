@@ -85,13 +85,13 @@ Al construir las funciones de densidad marginales tanto de *x* como de *y* con l
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/conjy.gif) 
 
 Ahora al graficar los ajustes se obtiene:
-* Distribución de la Densidad Marginal de X
+### Distribución de la Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.png) 
 
-* Distribución de la Densidad Marginal de Y
+### Distribución de la Densidad Marginal de Y
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
 
-* Inciso 2: Función de Densidad Conjunta
+## Inciso 2: Función de Densidad Conjunta
 Al asumir que las funciones obtenidas son estadísticamente independientes entre sí, se puede utilizar las ecuaciones y principios presentes en la `D34-P4` del material del curso. Debido a la afirmación de la independencia se puede decir que:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/inde1.gif)
@@ -168,19 +168,19 @@ En el caso de las variables dadas, se obtuvo:
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson_res.gif)
 
 Al ser el resultado anterior muy cercano a cero, nuevamente se puede puede afirmar que no existe dependencia estadística entre las variables.
-
+  
 ## Inciso 4: Gráficas 2D y 3D
 Se agregan las gráficas exclusivas de los ajustes de las funciones marginales, obtenidas aprtir del procedimineto del ``Inciso 1``:
 
-* Distribución de la Densidad Marginal de X
+### Distribución de la Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteXX.png) 
 
-* Distribución de la Densidad Marginal de Y
+### Distribución de la Densidad Marginal de Y
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteYY.png) 
 
 A continuación, se presenta la superficie  que modela a la función de densidad conjunta trabajada.
 
-* Distribución de la Densidad Conjunta
+### Distribución de la Densidad Conjunta
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/Distribución_conjunta.png) 
 
 
