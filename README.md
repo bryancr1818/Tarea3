@@ -45,5 +45,6 @@ plt.savefig("out/CurvaY.png")
 ```
 
 Se obtienen las siguientes gráficas:
-![Figura de X original](img/xInitPlot.png)
+![Curva inicial X](img/CurvaX.png)
+![Curva inicial Y](img/CurvaY.png)
 
