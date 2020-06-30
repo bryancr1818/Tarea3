@@ -88,10 +88,10 @@ Al construir las funciones de desnsidad marginales tanto de x como de y con los 
 
 Ahora al graficar los ajustes se obtiene:
 ### Distribución de la Densidad Marginal de X
-![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.png) 
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.gid) 
 
 ### Distribución de la Densidad Marginal de Y
-![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.gif) 
 
 ## Inciso 2: Función de Densidad Conjunta
 Al asumir que las funciones obtenidas son estadísticamente independientes entre sí, se puede utilizar las ecuaciones y principios presentes en la `D34-P4` del material del curso. Debido a la afirmación de la independencia se puede decir que:
@@ -100,7 +100,7 @@ Al asumir que las funciones obtenidas son estadísticamente independientes entre
 
 Al utilizar las ecuaciones de las funciones de densidad marginales con la ecuación anterios, se obtiene la función de densidad conjunta:
 
-![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/conjxy.png) 
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/conjxy.gif) 
 
 
 ## Inciso 3: Valores de Correalación, Covarianza y Coeficiente de Correlación
