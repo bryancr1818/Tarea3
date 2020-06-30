@@ -45,6 +45,6 @@ plt.savefig("out/CurvaY.png")
 ```
 
 Se obtienen las siguientes gráficas:
-![Curva inicial X](img/CurvaX.png)
-![Curva inicial Y](img/CurvaY.png)
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaX.png) 
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaY.png) 
 
