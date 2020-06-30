@@ -79,6 +79,13 @@ print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/3.gif) 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/4.gif) 
 
+Al construir las funciones de desnsidad marginales tanto de x como de y con los datos anteriores, se tiene:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/conjx.png) 
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/conjy.png) 
+
+
 Ahora al graficar los ajustes se obtiene:
 ### Distribución de la Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.png) 
@@ -87,6 +94,13 @@ Ahora al graficar los ajustes se obtiene:
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
 
 ## Inciso 2: Función de Densidad Conjunta
+Al asumir que las funciones obtenidas son estadísticamente independientes entre sí, se puede utilizar las ecuaciones y principios presentes en la `D34-P4` del material del curso. Debido a la afirmación de la independencia se puede decir que:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/inde1.gif)
+
+Al utilizar las ecuaciones de las funciones de densidad marginales con la ecuación anterios, se obtiene la función de densidad conjunta:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/conjxy.png) 
 
 
 ## Inciso 3: Valores de Correalación, Covarianza y Coeficiente de Correlación
