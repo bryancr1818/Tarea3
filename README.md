@@ -68,7 +68,7 @@ sigmay = paramy[1]
 print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y el valor de sigma es: ", sigmay)
 ```
 
-$$\mu_X  = 9.9048$$
+`$$\mu_X  = 9.9048$$`
 $$\sigma_X = 3.2994$$
 
 $$\mu_Y = 15.0794$$
