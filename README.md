@@ -8,9 +8,9 @@ Carné: B71671
   - [Inciso 2](#inciso_2)
   - [Inciso 3](#inciso_3)
   - [Inciso 4](#inciso_4)
-    - [Distribución de la Densidad Marginal de X]
-    - [Distribución de la Densidad Marginal de y]
-    - [Distribución de la Densidad Conjunta]
+    - [Distribución de la Densidad Marginal de X](#X)
+    - [Distribución de la Densidad Marginal de y](#Y)
+    - [Distribución de la Densidad Conjunta](#XY)
 
 ## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal
 Para el presente trabajo fueron dados los archivos de `xy.csv` y `xyp.csv`,  para trabajar estos documentos fue necesario traducirlos a un tipo de datos manipulables, esto se logró a partir de la biblioteca de `Pandas` y se almacenaron los datos en las varibales `valmargx`y `valmargy`:
