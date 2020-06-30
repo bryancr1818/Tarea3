@@ -102,6 +102,11 @@ Al utilizar las ecuaciones de las funciones de densidad marginales con la ecuaci
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/conjxy.gif) 
 
+Ahora para tener el modelo evaluado, se ingresa los valores de `\mu` y `\sigma`:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/conjxy_res.gif) 
+
+
 
 ## Inciso 3: Valores de Correalación, Covarianza y Coeficiente de Correlación
 En esta sección se utilizaron los valores del data_frame `xyp`, para realizar la multiplicación de cada una de las combinaciones de **X** y de **Y**, con la probabilidad asociada.
