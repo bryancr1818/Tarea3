@@ -8,7 +8,6 @@ Carné: B71671
   - [Inciso 2](#inciso_2)
   - [Inciso 3](#inciso_3)
   - [Inciso 4](#inciso_4)
-  - [Archivos](#archivos)
 
 
 ## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal
