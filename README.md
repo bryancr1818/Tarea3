@@ -114,7 +114,9 @@ en nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica
 
 ### Covarianza
 A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como `C_{XY}` y está definido por la siguiente ecuación:
-![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif). Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado:
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif).
+
+Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza_res.gif)
 
