@@ -131,7 +131,7 @@ Según lo que dice el material del curso, este es el momento de segundo orden, e
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación.gif)
 
-En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite ideependencia lineal entre los Variables, se realiza la prueba `E[X,Y] = E[X]E[Y]`, se la condición se cumple se comprueba la independencia estadística.
+En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite idependencia lineal entre los Variables, se realiza la prueba `E[X,Y] = E[X]E[Y]`, se la condición se cumple se comprueba la independencia estadística.
 
 En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
 
@@ -141,16 +141,22 @@ Al calcular `E[X]E[Y]` multiplicando `mu_x*mu_y` se obtiene:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/val_espe.gif)
 
-De los dos resultados anteriores se puede ver que la diferencia es muy pequeña, se le puede atribuir el error a los métodos de aproximación que se utilizaron. Como conclusión, se puede decir que las variables son estadísticamente independientes ya que `C_{XY} = E[X]E[Y]`, mismos resultado de la suposición del Inciso 2.
+De los dos resultados anteriores se puede ver que la diferencia es muy pequeña, se le puede atribuir el error a los métodos de aproximación que se utilizaron. Como conclusión, se puede decir que las variables son estadísticamente independientes ya que `C_{XY} \approx E[X]E[Y]`, mismos resultado de la suposición del Inciso 2.
 
 ### Covarianza
 A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como `C_{XY}` y está definido por la siguiente ecuación:
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif).
 
-Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado: 
+Es un índice muy útil para analizar la relación el que crecen o decrecen los valores de una variable con respecto a otra, existen 3 posibilidades distintas para la covarianza:
+*     Si C_{XY} > 0 hay dependencia directa o positiva, los grandes valores de `x` corresponden grandes valores de `y`.
+*     Si C_{XY} = 0 no hay existencia de una relación lineal entre las dos variables.
+*     Si C_{XY} < 0 hay dependencia inversa o negativa, a grandes valores de `x` corresponden pequeños valores de `y`.
 
+En este caso con valores discretos, se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado: 
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza_res.gif)
+
+Tomando en cuenta la explicación y el resultado anterior, se puede decir que <img src="https://render.githubusercontent.com/render/math?math=C_{XY} \approx 0">, eso implica y confirma la independencia estadística entre las variables.
 
 ### Coeficiente de Correlación
 Este es el momento de segundo orden normalizado, se denota con `ρ`. Cooresponde a:
