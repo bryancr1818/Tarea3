@@ -137,7 +137,7 @@ En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación_res.gif)
 
-Al calcular <img src="https://render.githubusercontent.com/render/math?math=E[X,Y]"> multiplicando <img src="https://render.githubusercontent.com/render/math?math=E[X,Y] = \mu_x\cdot\mu_y"> se obtiene:
+Al calcular <img src="https://render.githubusercontent.com/render/math?math=E[X,Y]"> multiplicando <img src="https://render.githubusercontent.com/render/math?math=\mu_x\cdot\mu_y"> se obtiene:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/val_espe.gif)
 
@@ -159,13 +159,15 @@ En este caso con valores discretos, se calcula mediante la iteración de la lín
 Tomando en cuenta la explicación y el resultado anterior, se puede decir que <img src="https://render.githubusercontent.com/render/math?math=C_{XY} \approx 0">, eso implica y confirma la independencia estadística entre las variables.
 
 ### Coeficiente de Correlación
-Este es el momento de segundo orden normalizado, se denota con `ρ`. Cooresponde a:
+Este es el momento de segundo orden normalizado, se denota con `ρ`. Es un índice que se utiliza para medir el grado de correlación entre 2 variables. `ρ` es un índice acotado de [-1,1[, cuando `ρ = 0` las variables son estadísticamente independientes. El también llamado Coeficiente de Pearson se calcula de la siguiente manera:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson.gif)
 
-y al realizar la operación, se obtiene:
+En el caso de las variables dadas, se obtuvo:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson_res.gif)
+
+Al ser el resultado anterior muy cercano a cero, nuevamente se puede puede afirmar que no existe dependencia estadística entre las variables.
 
 ## Inciso 4: Gráficas 2D y 3D
 Se agregan las gráficas exclusivas de los ajustes de las funciones marginales, obtenidas aprtir del procedimineto del ``Inciso 1``:
