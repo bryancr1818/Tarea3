@@ -45,6 +45,25 @@ plt.savefig("out/CurvaY.png")
 ```
 
 Se obtienen las siguientes gráficas:
+## Función de Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaX.png) 
+## Función de Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaY.png) 
 
+Como se logra apreciar, estas gráficas tienen naturaleza de una función de distribución Gaussiana, por lo que se procede a calcular los parámetros para cada una de las distribuciones:
+
+```python
+def gaussiana(x, mu, sigma):
+    return 1/(np.sqrt(2*np.pi*sigma**2)) * np.exp(-(x-mu)**2/(2*sigma**2))
+
+# se obtienen los parámetros (mu y sigma) de cada una de las curvas
+paramx, _= curve_fit(gaussiana, xcount, val_margx)
+mux = paramx[0]
+sigmax = paramx[1]
+print("El valor de mu para la función de densidad marginal de X es: ", mux, " y el valor de sigma es: ", sigmax)
+
+paramy, _= curve_fit(gaussiana, ycount, val_margy)
+muy = paramy[0]
+sigmay = paramy[1]
+print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y el valor de sigma es: ", sigmay)
+```
