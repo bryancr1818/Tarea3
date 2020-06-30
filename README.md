@@ -51,9 +51,9 @@ plt.savefig("out/CurvaY.png")
 ```
 
 Se obtienen las siguientes gráficas:
-## Función de Densidad Marginal de X
+### Función de Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaX.png) 
-## Función de Densidad Marginal de X
+### Función de Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/CurvaY.png) 
 
 Como se logra apreciar, estas gráficas tienen naturaleza de una función de distribución Gaussiana, por lo que se procede a calcular los parámetros para cada una de las distribuciones:
