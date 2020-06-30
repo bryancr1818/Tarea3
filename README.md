@@ -129,6 +129,17 @@ y al realizar la operación, se obtiene:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson_res.gif)
 
+## Inciso 4: Gráficas 2D y 3D
+Se agregan las gráficas exclusivas de los ajustes de las funciones marginales, obtenidas aprtir del procedimineto del ``Inciso 1``:
+
+### Distribución de la Densidad Marginal de X
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteXX.png) 
+
+### Distribución de la Densidad Marginal de Y
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteYY.png) 
+
+### Distribución de la Densidad Conjunta
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/Distribución_conjunta.png) 
 
 
 
