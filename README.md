@@ -68,17 +68,39 @@ sigmay = paramy[1]
 print("El valor de mu para la función de densidad marginal de Y es: ", muy, " y el valor de sigma es: ", sigmay)
 ```
 
-\mu_X  = 9.9048
-\sigma_X = 3.2994
+$$\mu_X  = 9.9048$$
+$$\sigma_X = 3.2994$$
 
-\mu_Y = 15.0794
-\sigma_X = 6.0269
+$$\mu_Y = 15.0794$$
+$$\sigma_X = 6.0269$$
 
 Ahora al graficar los ajustes se obtiene:
-## Distribución de la Densidad Marginal de X
+### Distribución de la Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteX.png) 
 
-## Distribución de la Densidad Marginal de Y
+### Distribución de la Densidad Marginal de Y
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
 
+## Inciso 3: Función de Densidad Conjunta
+
+
+## Inciso 4: Valores de Correalación, Covarianza y Coeficiente de Correlación
+En esta sección se utilizaron los valores del data_frame `xyp`, para realizar la multiplicación de cada una de las combinaciones de **X** y de **Y**, con la probabilidad asociada.
+
+```python
+# se inicializan las variables
+correlación = 0
+co_varianza = 0
+
+# se calcula la correlación y la co_varianza 
+for i in range(0,len(xyp)):
+    correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]
+    co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])
+
+# se calcula el coeficiente de correlación --> pearson
+pearson = co_varianza / (sigmax+sigmay)
+print("La correlación  es :", correlación)
+print("La co-varianza  es :",co_varianza)
+print("EL coeficiente de correlación es :", pearson)
+```
 
