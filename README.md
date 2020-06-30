@@ -10,7 +10,7 @@ Carné: B71671
   - [Inciso 4](#inciso_4)
 
 ## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal 
-Para el presente trabajo fueron dados los archivos de `xy.csv` y `xyp.csv`,  para trabajar estos documentos fue necesario traducirlos a un tipo de datos manipulables, esto se logró a partir de la biblioteca de `Pandas` y se almacenaron los datos en las varibales `valmargx`y `valmargy`:
+Para el presente trabajo fueron dados los archivos de `xy.csv` y `xyp.csv`,  para trabajar estos documentos fue necesario traducirlos a un tipo de datos manipulables, esto se logró a partir de la biblioteca de `Pandas` y se almacenaron los datos en las varibles `valmargx`y `valmargy`:
 
 ``` python
 xy = pd.read_csv("xy.csv",  sep=',')
@@ -20,14 +20,14 @@ xyp = pd.read_csv("xyp.csv",  sep=',')
 val_margx = []
 val_margy = []
 
-# Se obtienen los la sumatorias de las probabilidades (valores marginales)
+# Se obtienen las la sumatorias de las probabilidades (valores marginales)
 val_margx = [ i for i in xy.sum(axis=1, numeric_only=True)]
 val_margy= [ i for i in xy.sum(axis=0, numeric_only=True)]
  ```
- Para mayor facilidad a la hora de utilizar los datos, se queman en el código los vestores `xcount` y `ycount`, los cuales equivalen a la cantidad de términos en las columnas y las filas de los datos.:
+ Para mayor facilidad a la hora de utilizar los datos, se queman en el código los vectores `xcount` y `ycount`, los cuales equivalen a la cantidad de términos en las columnas y las filas de los datos:
 
  ```python
-# se genera un vector de valores coorespondiente al números de valores marginales obtenidos
+# se genera un vector de valores coorrespondiente al números de valores marginales obtenidos
 xcount = np.linspace(5,15, len(val_margx))
 ycount = np.linspace(5,25, len(val_margy))
 ```
@@ -131,9 +131,9 @@ Según lo que dice el material del curso, este es el momento de segundo orden, e
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación.gif)
 
-En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite idependencia lineal entre los Variables, se realiza la prueba <img src="https://render.githubusercontent.com/render/math?math=E[X,Y] = E[X]E[Y]">, se la condición se cumple se comprueba la independencia estadística.
+En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca claramente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite idependencia lineal entre los Variables, se realiza la prueba <img src="https://render.githubusercontent.com/render/math?math=E[X,Y] = E[X]E[Y]">, se la condición se cumple se comprueba la independencia estadística.
 
-En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
+En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterior calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación_res.gif)
 
@@ -170,7 +170,7 @@ En el caso de las variables dadas, se obtuvo:
 Al ser el resultado anterior muy cercano a cero, nuevamente se puede puede afirmar que no existe dependencia estadística entre las variables.
   
 ## Inciso 4: Gráficas 2D y 3D
-Se agregan las gráficas exclusivas de los ajustes de las funciones marginales, obtenidas aprtir del procedimineto del ``Inciso 1``:
+Se agregan las gráficas exclusivas de los ajustes de las funciones marginales, obtenidas a partir del procedimineto del ``Inciso 1``:
 
 ### Distribución de la Densidad Marginal de X
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteXX.png) 
