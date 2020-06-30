@@ -137,7 +137,7 @@ En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación_res.gif)
 
-Al calcular `E[X]E[Y]` multiplicando `mu_x*mu_y` se obtiene:
+Al calcular <img src="https://render.githubusercontent.com/render/math?math=E[X]E[Y]"> multiplicando <img src="https://render.githubusercontent.com/render/math?math=\mu_x*\mu_y"> se obtiene:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/val_espe.gif)
 
