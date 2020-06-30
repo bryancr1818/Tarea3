@@ -120,6 +120,18 @@ Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza_res.gif)
 
+### Coeficiente de Correlación
+Este es el momento de segundo orden normalizado, se denota con `\rho`. Cooresponde a:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson.gif)
+
+y al realizar la operación, se obtiene:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/pearson_res.gif)
+
+
+
+
 
 
 
