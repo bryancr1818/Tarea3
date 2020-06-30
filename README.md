@@ -8,11 +8,8 @@ Carné: B71671
   - [Inciso 2](#inciso_2)
   - [Inciso 3](#inciso_3)
   - [Inciso 4](#inciso_4)
-    - [Distribución de la Densidad Marginal de X](#X)
-    - [Distribución de la Densidad Marginal de y](#Y)
-    - [Distribución de la Densidad Conjunta](#XY)
 
-## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal
+## Inciso 1: Curvas de mejor ajuste para las funciones de densidad marginal 
 Para el presente trabajo fueron dados los archivos de `xy.csv` y `xyp.csv`,  para trabajar estos documentos fue necesario traducirlos a un tipo de datos manipulables, esto se logró a partir de la biblioteca de `Pandas` y se almacenaron los datos en las varibales `valmargx`y `valmargy`:
 
 ``` python
@@ -130,19 +127,28 @@ print("EL coeficiente de correlación es :", pearson)
 Como se tiene en el materia del curso, hay ecuaciones ya definidas para cada uno de los momentos principales: Covarianza, Correlación, Coeficiente de Correlación. Cada uno tiene su propio significado que al que se le puede dar un significado físico a partir de las gráficas obtenidas.
 
 ### Correlación
-Según lo que dice el material del curso, este es el momento de segundo orden, expresado también como `R_{XY}` y  está defindo por la siguiente ecucación:
+Según lo que dice el material del curso, este es el momento de segundo orden, expresado también como `R_{XY} = E[X,Y]` y  está defindo por la siguiente ecucación:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación.gif)
 
-en nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
+En la `D6-P10`se hace referencia a la correlación como un índice de cuán asociadas o realcionadas se encuentras las variables y se especifíca clara mente que esto no implica causalidad. Además, se hace mención en el material del curso, que para determinar si exite ideependencia lineal entre los Variables, se realiza la prueba `E[X,Y] = E[X]E[Y]`, se la condición se cumple se comprueba la independencia estadística.
+
+En nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación_res.gif)
+
+Al calcular `E[X]E[Y]` multiplicando `mu_x*mu_y` se obtiene:
+
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/val_espe.gif)
+
+De los dos resultados anteriores se puede ver que la diferencia es muy pequeña, se le puede atribuir el error a los métodos de aproximación que se utilizaron. Como conclusión, se puede decir que las variables son estadísticamente independientes ya que `C_{XY} = E[X]E[Y]`, mismos resultado de la suposición del Inciso 2.
 
 ### Covarianza
 A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como `C_{XY}` y está definido por la siguiente ecuación:
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif).
 
-Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado:
+Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado: 
+
 
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza_res.gif)
 

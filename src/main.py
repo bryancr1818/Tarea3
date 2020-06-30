@@ -116,7 +116,9 @@ for i in range(0,len(xyp)):
 
 # se calcula el coeficiente de correlación --> pearson
 pearson = co_varianza / (sigmax+sigmay)
+multi_val_esperado = mux*muy
 print("La correlación  es :", correlación)
+print("La multiplicación E[X]*E[X]= " multi_val_esperado)
 print("La co-varianza  es :",co_varianza)
 print("EL coeficiente de correlación es :", pearson)
 
