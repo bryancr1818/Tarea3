@@ -102,14 +102,7 @@ plt.savefig("out/AjusteY.png")
 
 #########################################################Inciso 2#####################################################################
 
-
-param_conj_x, _= curve_fit(gaussiana, val_margx, sigmax)
-mu_con_x = param_conj_x[0]
-sigma_conj_x = param_conj_x[1]
-
-param_conj_y, _= curve_fit(gaussiana, val_margy, sigmay)
-mu_con_y = param_conj_y[0]
-sigma_conj_y = param_conj_y[1]
+#Esta sección corresponde a un análisis analítico realizado en el README.md
 
 #########################################################Inciso 3#####################################################################
 # se inicializan las variables
