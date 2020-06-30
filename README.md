@@ -79,10 +79,10 @@ Ahora al graficar los ajustes se obtiene:
 ### Distribución de la Densidad Marginal de Y
 ![alt text](https://github.com/bryancr1818/Tarea3/blob/master/out/AjusteY.png) 
 
-## Inciso 3: Función de Densidad Conjunta
+## Inciso 2: Función de Densidad Conjunta
 
 
-## Inciso 4: Valores de Correalación, Covarianza y Coeficiente de Correlación
+## Inciso 3: Valores de Correalación, Covarianza y Coeficiente de Correlación
 En esta sección se utilizaron los valores del data_frame `xyp`, para realizar la multiplicación de cada una de las combinaciones de **X** y de **Y**, con la probabilidad asociada.
 
 ```python
@@ -101,4 +101,19 @@ print("La correlación  es :", correlación)
 print("La co-varianza  es :",co_varianza)
 print("EL coeficiente de correlación es :", pearson)
 ```
+Como se tiene en el materia del curso, hay ecuaciones ya definidas para cada uno de los momentos principales: Covarianza, Correlación, Coeficiente de Correlación. Cada uno tiene su propio significado que al que se le puede dar un significado físico a partir de las gráficas obtenidas.
+
+### Correlación
+Según lo que dice el material del curso, este es el momento de segundo orden, expresado también como `R_{XY}` y  está defindo por la siguiente ecucación:
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación.gif)
+en nuestro caso, se trabaja con valores discretos, por lo que solo se multiplica cada "par ordenado" por su probabilidad correspondiente. En el código anterio calcula el valor de la correlación con la línea `correlación = correlación + xyp.x[i]*xyp.y[i]*xyp.p[i]` y el resultado obtenido es:
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/correlación_res.gif)
+
+### Covarianza
+A la covarianza se le conoce como el momento conjunto de segundo orden, se expresa como `C_{XY}` y está definido por la siguiente ecuación:
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza.gif). Se calcula mediante la iteración de la línea `co_varianza = co_varianza + (xyp.x[i] - mux)*(xyp.y[i]-muy)*(xyp.p[i])` y generó como resultado:
+![alt text](https://github.com/bryancr1818/Tarea3/blob/master/ecauciones/covarianza_res.gif)
+
+
+
 
